@@ -1,0 +1,58 @@
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background:url(sky.jpg)no-repeat; 
+      background-size: cover;
+      background-position: center;
+    }
+    .todo-container {
+      max-width: 400px;
+      height: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background:transparent;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid white;
+    }
+    h2 {
+      font-family: "Poppins" sans-serif;
+      color: white;
+    }
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; 
+    }
+    .add-btn {
+      height: 55px;
+      width: 55px;
+    }
+    .add-btn:hover {
+      background-color: black;
+      color: white;
+    }
+    .edit-btn, .delete-btn {
+      align-items: right;
+      margin-left: 10px;
+    }
+    .task-text {
+      max-width: 60%; 
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    .task-number {
+      font-weight: bold;
+      margin-right: 10px;
+    }
